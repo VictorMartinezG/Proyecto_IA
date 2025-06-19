@@ -4,8 +4,6 @@ import discord
 import asyncio
 from chatbot_atencion import obtener_respuesta
 
-# 🔐 Pega aquí tu token de bot (reemplaza el texto entre comillas)
-TOKEN = "Token"
 
 # Intents necesarios para recibir mensajes
 intents = discord.Intents.default()
@@ -17,7 +15,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'✅ El bot se ha conectado como {client.user}')
+    print(f' El bot se ha conectado como {client.user}')
 
 @client.event
 async def on_message(message):
